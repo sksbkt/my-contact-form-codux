@@ -1,2 +1,16 @@
 .root {
+    width: 100%;
+}
+
+.input {
+    padding: 0.6em 0.8em;
+    border: 1px solid #C6C6C6;
+    border-radius: 0.2em;
+    outline: unset;
+
+    &:focus {
+        border: 1px solid #5193CE;
+    }
+
+    width:100%;
 }

@@ -1,18 +1,17 @@
 import classNames from 'classnames';
-import styles from './input.module.scss';
+import styles from './form-row.module.scss';
 
-export interface InputProps {
+export interface FormRowProps {
     className?: string;
-    id?: string;
-    name?: string;
+    children?: JSX.Element | Array<JSX.Element>;
 }
 
 /**
  * This component was created using Codux's Default new component template.
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
-export const Input = ({ className, id, name }: InputProps) => {
+export const FormRow = ({ className, children }: FormRowProps) => {
     return <div className={classNames(styles.root, className)}>
-        <input id={id} name={name} className={styles.input} />
+    {children}
     </div>;
 };

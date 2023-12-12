@@ -1,2 +1,17 @@
-.root {
+.root {}
+
+.button {
+    background-color: #9300ff;
+    color: #ffffff;
+    font-size: 0.8em;
+    margin: 0.5em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+
+    &:hover {
+        background-color: #B46AE7;
+        border: 0px solid #FC7878;
+    }
+
+    border:0px solid transparent;
 }
